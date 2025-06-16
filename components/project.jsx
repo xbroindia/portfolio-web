@@ -9,7 +9,7 @@
  import pic5 from '../src/assets/Document.jpeg'
 import Scroll_fade from '../src/hooks/scroll_fade';
  
- export default function Projects() {
+export default function Project() {
 
 const [visible,ref1] =Scroll_fade({threshold:0.5})
 

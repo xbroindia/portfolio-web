@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './header'
 import About from './about'
-import Projects from './projects'
+import Project from './project'
 import ContactUs from './contactus'
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <>
     <Header/>
     <About/>
-    <Projects/>
+    <Project/>
     <ContactUs/>
    </>
 

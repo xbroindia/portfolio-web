@@ -1,10 +1,11 @@
 // ContactForm.jsx
 import React, { useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import Scroll_fade from "../src/hooks/scroll_fade";
 
 export default function ContactUs() {
   const [state, handleSubmit] = useForm("mrbkkrae");
-
+  const [visible1,ref1] = Scroll_fade({threshold:0.5})
   useEffect(() => {
     if (state.succeeded) {
       alert("✅ Your message has been sent successfully!");
@@ -18,13 +19,12 @@ export default function ContactUs() {
      <h1 className=' text-6xl font-bold underline text-center  '>Contact Us</h1>
      <form
       onSubmit={handleSubmit}
-      className="max-w-md mx-auto p-6 space-y-4 shadow-lg  rounded-4xl mt-[10%] scroll-mt-[280px]"
-     
+      className={`max-w-md mx-auto p-6 space-y-4 shadow-lg  rounded-4xl mt-[10%] scroll-mt-[280px] ${visible1 ?"opacity-100 scale-100" : "opacity-0 scale-50"} transition-all duration-[3s]`}
+      ref={ref1}
       style={{
     background: "linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%)"
   }}
     >
-
       <div>
         <label className="block mb-1  font-bold ">Name</label>
         <input
