@@ -15,11 +15,11 @@ export default function ContactUs() {
 
   return (
     <>
-    <div className=" min-h-[50vh] mt-[10%]"  id="contactus">
+    <div className=" min-h-[100vh] mt-[10%] scroll-mt-[100px]"  id="contactus">
      <h1 className=' text-6xl font-bold underline text-center  '>Contact Us</h1>
      <form
       onSubmit={handleSubmit}
-      className={`max-w-md mx-auto p-6 space-y-4 shadow-lg  rounded-4xl mt-[10%] scroll-mt-[280px] ${visible1 ?"opacity-100 scale-100" : "opacity-0 scale-50"} transition-all duration-[3s]`}
+      className={`max-w-md mx-auto p-6 space-y-4 shadow-lg  rounded-4xl mt-[8%] scroll-mt-[280px] ${visible1 ?"opacity-100 scale-100" : "opacity-0 scale-50"} transition-all duration-[3s]`}
       ref={ref1}
       style={{
     background: "linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%)"
