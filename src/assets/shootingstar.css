@@ -1,0 +1,31 @@
+.sky {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.shooting-star {
+  position: absolute;
+  width: 400px;
+  height: 10px;
+  background: linear-gradient(to right, cyan, rgb(2, 152, 246), rgba(255, 255, 255, 0));
+  border-radius: 20%;
+  transform: rotate(45deg);
+  opacity: 0;
+  animation: fall 3s ease-in-out forwards; /* Slower animation */
+}
+
+@keyframes fall {
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(800px, 800px) rotate(45deg);
+    opacity: 0;
+  }
+}
