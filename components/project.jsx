@@ -59,7 +59,7 @@ datas.map((imgdata)=>{
 
 
    return (
-     <div id="projects" className='h-[100vh] w-[100%] scroll-mt-[80px] mt-[25%] '>
+     <div id="projects" className=' h-[100vh] w-[100%] scroll-mt-[80px] mt-[25%] '>
      <h1 className=' text-center underline capitalize font-bold text-6xl mb-[100px] '>projects</h1>
      <div className='imageSlider mt-[10vh]'>
      <button className="arrow left-arrow" onClick={handleLeftClick}>&#8592;</button>
