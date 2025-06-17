@@ -79,7 +79,7 @@
      </div>
  </nav> 
     <div className='flex flex-col md:flex-row items-center justify-center gap-[20%]'>
-    <div className=' text-white text-3xl lg:text-5xl w-[400px] sm:w-[600px] my-[200px] text-center font-Roboto'>
+    <div className=' text-white h-[195px] text-3xl lg:text-5xl w-[400px] sm:w-[600px] my-[200px] text-center font-Roboto'>
      {name}
     </div>
     
