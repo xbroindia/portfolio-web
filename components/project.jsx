@@ -59,7 +59,7 @@ datas.map((imgdata)=>{
 
 
    return (
-     <div id="projects" className='h-[100vh] w-[100%] scroll-mt-[80px] mt-[20%] '>
+     <div id="projects" className='h-[100vh] w-[100%] scroll-mt-[80px] mt-[25%] '>
      <h1 className=' text-center underline capitalize font-bold text-6xl mb-[100px] '>projects</h1>
      <div className='imageSlider mt-[10vh]'>
      <button className="arrow left-arrow" onClick={handleLeftClick}>&#8592;</button>
@@ -76,7 +76,7 @@ datas.map((imgdata)=>{
             <a
               href={link}
               key={index}
-              className={`carousel__slide transition-all duration-[2.5s] ${visible ?"opacity-100 scale-100" : "opacity-0 scale-50"}`}
+              className={`carousel__slide transition-all duration-[2.5s] ${visible ?"opacity-100 scale-100" : "opacity-0 scale-50"} `}
               style={{
                 backgroundImage: `url(${src})`,
                 transform: `rotateY(${rotation}deg) translateZ(242px)`,

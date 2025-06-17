@@ -7,8 +7,6 @@
 }
 
 
-
-
 #hameburger-menue{
     display:block;
     display:flex;
@@ -33,7 +31,8 @@
 @theme{
   --shadow-3xl: 10px 80px 190px rgb(52, 180, 235); 
   --font-Roboto:"Roboto";
-  --font-Montserrat:"Montserrat"
+  --font-Montserrat:"Montserrat";
+  --breakpoint-short:30rem
 }
 
 li{
@@ -51,6 +50,7 @@ li{
 .nav-a:hover{
     @apply text-amber-200
 }
+
 
 .imageSlider{
   perspective: 1000px;

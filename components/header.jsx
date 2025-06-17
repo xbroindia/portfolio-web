@@ -68,7 +68,7 @@
  <nav className='h-[76px]  w-full bg-black/50 backdrop-blur-3xl z-[1000] fixed flex gap-[20%]  justify-center items-center'>
      <ul className=' gap-[80px] text-[16px]  md:text-[18px] lg:text-[26px] font-bold  hidden md:flex item-center' id={menue} onClick={()=>{setbtn(false)}}>
       <li><a href="#home" className='nav-a'>home</a></li>
-      <li><a href="#about" className='nav-a'>about</a></li>
+      <li><a href="#about-section" className='nav-a'>about</a></li>
       <li><a href="#projects" className='nav-a'>projects</a></li>
       <li><a href="#contactus" className='nav-a'>contact us</a></li>
      </ul>
