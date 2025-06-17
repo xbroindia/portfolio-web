@@ -2,6 +2,9 @@
 import React, { useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Scroll_fade from "../src/hooks/scroll_fade";
+ import pic1 from '../src/assets/social-medias-icons/facebook.png'
+ import pic2 from '../src/assets/social-medias-icons/instagram.png'
+ import pic3 from '../src/assets/social-medias-icons/github.png'
 
 export default function ContactUs() {
   const [state, handleSubmit] = useForm("mrbkkrae");
@@ -19,7 +22,7 @@ export default function ContactUs() {
      <h1 className=' text-6xl font-bold underline text-center  '>Contact Us</h1>
      <form
       onSubmit={handleSubmit}
-      className={`max-w-md mx-auto p-6 space-y-4 shadow-lg  rounded-4xl mt-[8%] h-[500px] w-[300px]  short:w-[500px] scroll-mt-[280px] ${visible1 ?"opacity-100 scale-100" : "opacity-0 scale-50"} transition-all duration-[3s]`}
+      className={`max-w-md mx-auto p-6 space-y-4 shadow-lg  rounded-4xl mt-[10%] h-[500px] w-[300px]  short:w-[500px] scroll-mt-[280px] ${visible1 ?"opacity-100 scale-100" : "opacity-0 scale-50"} transition-all duration-[3s]`}
       ref={ref1}
       style={{
     background: "linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%)"
@@ -72,6 +75,17 @@ export default function ContactUs() {
 </button>
 
     </form>
+     <div className='flex justify-center items-center gap-2.5 mt-2'>
+                 <a href='https://www.facebook.com/profile.php?id=61577683704152'>
+                 <img src={pic1} className='h-[50px] bg-amber-400 rounded-4xl' />
+                 </a>
+                 <a href='https://www.instagram.com/xbrocoder/'>
+                   <img src={pic2} className='h-[50px] bg-amber-400 rounded-4xl'/>
+                 </a>
+                 <a href='https://github.com/xbroindia'>
+                    <img src={pic3} className='h-[50px] bg-amber-400 rounded-4xl' />
+                  </a>
+                </div>
     </div>
     </>
   );
