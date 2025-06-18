@@ -63,7 +63,7 @@
 
 
    return (
-    <header className=' min-h-[100vh] w-full  bg-black overflow-hidden' id='home'>
+    <header className=' min-h-[100vh] w-full  bg-linear-to-tr from-gray-800 via-gray-600 to-gray-800 overflow-hidden' id='home'>
     <Shootingstar/>
  <nav className='h-[76px]  w-full bg-black/50 backdrop-blur-3xl z-[1000] fixed flex gap-[20%]  justify-center items-center'>
      <ul className=' gap-[80px] text-[16px]  md:text-[18px] lg:text-[26px] font-bold  hidden md:flex item-center' id={menue} onClick={()=>{setbtn(false)}}>
@@ -79,7 +79,7 @@
      </div>
  </nav> 
     <div className='flex flex-col md:flex-row items-center justify-center gap-[20%]'>
-    <div className=' text-white h-[195px] text-3xl lg:text-5xl w-[400px] sm:w-[600px] my-[200px] text-center font-Roboto'>
+    <div className=' text-white h-[195px] text-3xl lg:text-5xl w-[400px] sm:w-[600px] my-[200px] text-center font-Roboto capitalize font-bold'>
      {name}
     </div>
     

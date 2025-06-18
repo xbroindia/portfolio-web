@@ -68,7 +68,7 @@ export default function ContactUs() {
   type="submit"
   disabled={state.submitting}
   className={`relative inline-block px-10 py-4 text-[17px] font-medium uppercase rounded-full transition-all duration-200 overflow-hidden group 
-    ${state.submitting ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'bg-white text-black hover:-translate-y-[3px] hover:shadow-[0_10px_20px_rgba(0,0,0,0.2)] active:translate-y-[-1px] active:shadow-[0_5px_10px_rgba(0,0,0,0.2)]'} cursor-pointer`}
+    ${state.submitting ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'bg-white text-black hover:-translate-y-[3px] hover:shadow-[0_10px_20px_rgba(0,0,0,0.2)] active:translate-y-[-3px] active:shadow-[0_8px_15px_rgba(0,0,0,0.2)]'} cursor-pointer`}
 >
   <span className="absolute inset-0 z-0 rounded-full bg-white transition-transform duration-400 scale-100 opacity-100 group-hover:scale-150 group-hover:opacity-0"></span>
   <span className="relative z-10 font-bold">{state.submitting ? 'Sending...' : 'Submit'}</span>
