@@ -65,7 +65,7 @@ export default function Project() {
   };
 
   return (
-    <div id="projects" className="min-h-[100vh] w-full scroll-mt-[80px] mt-[25%]">
+    <div id="projects" className="h-[110vh] w-full scroll-mt-[80px]  mt-[20%]">
       <h1 className="text-center underline capitalize font-bold text-6xl mb-[100px]">
         Projects
       </h1>
