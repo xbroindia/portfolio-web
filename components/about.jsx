@@ -14,7 +14,7 @@ export default function About(){
   const[visible3,ref3]=Scroll_fade({threshold:0.5})
   const[visible4,ref4]=Scroll_fade({threshold:0.5})
     return(
-     <div id="about-section" className="relative mt-[8%] h-[100vh] w-[100%] scroll-mt-[78px] duration-[3s] ">
+     <div id="about-section" className="relative mt-[2%] min-h-[100vh] w-[100%] scroll-mt-[78px] duration-[3s] ">
      <h1 className=' text-6xl font-bold underline text-center  '>About</h1>
      <div className='mt-[10%] gap-[100px] lg:gap-0  flex flex-col items-center  lg:flex-row justify-between mx-[50px]'>
         <img src={person1} className={`rounded-2xl  shadow-[0.1px_0.1px_60px_rgb(166,165,162)] h-[500px]  sm:h-[550px] md:h-[700px] w-[450px] ${visible1 ? " opacity-100 scale-100 rotate-y-0":"opacity-0 scale-50 rotate-y-[180deg]"} transition-all duration-[2s]  `} ref={ref1}/>
