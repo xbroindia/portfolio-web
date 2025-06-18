@@ -65,7 +65,7 @@ export default function Project() {
   };
 
   return (
-    <div id="projects" className="h-[110vh] w-full scroll-mt-[80px]  mt-[20%]">
+    <div id="projects" className="h-[110vh] w-full scroll-mt-[80px]  mt-[25%]">
       <h1 className="text-center underline capitalize font-bold text-6xl mb-[100px]">
         Projects
       </h1>
@@ -73,7 +73,7 @@ export default function Project() {
       <div className="flex justify-center items-center flex-col lg:flex-row">
       
     <div className={`h-[300px] short:h-[600px] w-[300px] overflow-hidden short:w-[600px] md:w[700px]
-                   ${visible2 ? " opacity-100 scale-100 rotate-y-0":"opacity-0 scale-50 rotate-y-[180deg]"} transition-all duration-[2s] 
+                   ${visible2 ? " opacity-100 scale-100 rotate-x-0":"opacity-0 scale-50 rotate-x-[180deg]"} transition-all duration-[2s] 
       `} ref={ref2}>
           <img src={pic6} className="h-full w-full object-contain" />
         </div>
