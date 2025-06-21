@@ -18,7 +18,7 @@ export default function ContactUs() {
 
   return (
     <>
-    <div className="min-h-[100vh] mt-[200px] lg:mt-[100px]  scroll-mt-[100px]"  id="contactus">
+    <div className="min-h-[100vh] mt-[150px] lg:mt-[100px]  scroll-mt-[100px]"  id="contactus">
      <h1 className=' text-6xl font-bold underline text-center  '>Contact Us</h1>
      <form
       onSubmit={handleSubmit}
